@@ -1,7 +1,5 @@
 package interfaz.ejercicio2;
 
-import java.util.Objects;
-
 public class Futbolista implements Comparable<Futbolista> {
 	private int numeroCamiseta = 1;
 	private String nombre = "defaultName";
@@ -37,8 +35,13 @@ public class Futbolista implements Comparable<Futbolista> {
 
 	@Override
 	public int compareTo(Futbolista o) {
-		// TODO Auto-generated method stub
-		return 0;
+		int res;
+		if (this.numeroCamiseta != o.numeroCamiseta) {
+			res = this.numeroCamiseta - o.numeroCamiseta;
+		} else {
+			res = this.nombre.compareTo(o.nombre);
+		}
+		return res;
 	}
 
 }
