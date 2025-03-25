@@ -1,12 +1,31 @@
 Vehiculo: 
-	- String marca
-	- String modelo
-	- String color
-	- String matrícula
-	- boolean motor
-	- int marcha
-	- int velocidad
-	
+	# String marca
+	# String modelo
+	# String color
+	# String matrícula
+	# boolean motorEncendido
+	# int marcha = 1
+	# int velocidad = 0
+	----------------------
+	+ void Parar();
+	+ void Arrancar();
+	+ void subirMarcha();
+	+ void bajarMarcha();
+	+ boolean Acelerar(int velocidad, int tiempo);
+	+ void mantenerVelocidad(int tiempo);
+	+ void desacelerar;
+	----------------------
 	Vehiculo(String marca, String modelo, String color, String matricula)
 	
+Turismo extends vehiculo: 
+	- int numeroPlazas
+	- Uso tipoUso
+	
+Camion extends vehiculo:
+	- int pesoMaxAutorizado
+	- boolean mercanciaPeligrosa
+	
+Motocicleta extends vehiculo: 	
+	- int cc 
+	- boolean requiereCarnet (cc >= 125)
 	

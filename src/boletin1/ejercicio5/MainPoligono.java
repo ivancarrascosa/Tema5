@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MainPoligono {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		int opc;
 		PoligonoCrud listaPoligonos = new PoligonoCrud();
 		Scanner reader = new Scanner(System.in);
