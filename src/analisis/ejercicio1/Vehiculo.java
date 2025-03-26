@@ -8,31 +8,31 @@ public class Vehiculo {
 	/**
 	 * Marca del vehículo, por defecto Default
 	 */
-	String marca = "Default";
+	protected String marca = "Default";
 	/**
 	 * Modelo del vehículo, por defecto Default
 	 */
-	String modelo = "Default";
+	protected String modelo = "Default";
 	/**
 	 * Color del vehículo, por defecto Default
 	 */
-	String color = "Default";
+	protected String color = "Default";
 	/**
 	 * Matrícula del vehículo, por defecto Default
 	 */
-	String matrícula = "Default";
+	protected String matrícula = "Default";
 	/**
 	 * Estado del motor, por defecto apagado
 	 */
-	boolean motorEncendido = false;
+	protected boolean motorEncendido = false;
 	/**
 	 * Marcha, que por defecto será 0, punto muerto
 	 */
-	int marcha = 0;
+	protected int marcha = 0;
 	/**
 	 * Velocidad queserá 0 por defecto, el coche estará parado
 	 */
-	int velocidad = 0;
+	protected int velocidad = 0;
 
 	/**
 	 * Constructor para poner marca, modelo, color y matrícula del coche
