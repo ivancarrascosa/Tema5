@@ -6,7 +6,6 @@ public class Motocicleta extends Vehiculo {
 
 	public Motocicleta(String marca, String modelo, String color, String matrícula) {
 		super(marca, modelo, color, matrícula);
-		// TODO Auto-generated constructor stub
 	}
 
 	public Motocicleta(String marca, String modelo, String color, String matrícula, int cc) {
