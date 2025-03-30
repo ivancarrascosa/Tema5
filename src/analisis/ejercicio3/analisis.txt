@@ -1,0 +1,51 @@
+Transaccion:
+	private int dia;
+	private int mes;
+	private int año;
+	private String concepto;
+	private float importe;
+	
+	constructor con todos los parámetros,
+	
+	ningun setter
+	
+	todos los getter
+
+Persona:
+	private String DNI;
+	private String nombre;
+	private String apellidos;
+	private int telefono;
+
+abstract CuentaBancaria:
+	private ArrayList<Persona>;
+	private float dinero;
+	
+	public boolean ingresarDinero();
+	public boolean retirarDinero();
+	
+	public boolean añadirTitular();
+	public boolean eliminarTitular();
+	
+	public CuentaBancaria (DNI1, nombre1...)
+	public CuentaBancaria (DNI1, nombre1, DNI2, ...)
+	public CuentaBancaria (DNI1, nombre1, DNI2, DNI3, ...)
+	
+	getters de todo
+	
+	Ningun setter	
+	
+CuentaDeAhorro:
+	private float cuotaMantenimiento;
+	private float interesAnual;
+	
+	public int saldoAplicadoInteres();
+	
+	public void retirarMantenimiento();
+	
+CuentaCorriente: 
+	private float porcentajePorTransaccion;
+	private int numeroTransacciones;
+	private ArrayList<Transaccion>
+	
+	public void realizarTransaccion(int dia, int mes, int año, String concepto, float importe)

@@ -1,0 +1,16 @@
+Ficha:
+	private int id;
+	private String titulo;
+	abstract public int tiempoPrestamo; (será static en cada clase hija, jodienda historica (no se puede))
+	
+libro:
+	private String autor;
+	private String editorial; 
+revista:
+	private int numero;
+	private int añoPublicacion;
+DVD:
+	private enum Tipo {PELICULA, DOCUMENTAL, SERIE};
+	private String director;
+	private int año;
+	private Tipo tipoDVD{PELICULA, DOCUMENTAL, SERIE};
