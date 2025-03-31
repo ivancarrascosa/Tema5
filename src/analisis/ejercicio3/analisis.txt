@@ -27,9 +27,9 @@ abstract CuentaBancaria:
 	public boolean añadirTitular();
 	public boolean eliminarTitular();
 	
-	public CuentaBancaria (DNI1, nombre1...)
-	public CuentaBancaria (DNI1, nombre1, DNI2, ...)
-	public CuentaBancaria (DNI1, nombre1, DNI2, DNI3, ...)
+	public CuentaBancaria (Persona titular...)
+	public CuentaBancaria (Persona titular, titular2, ...)
+	public CuentaBancaria (Persona titular, titular2, titular3, ...)
 	
 	getters de todo
 	
