@@ -17,6 +17,28 @@ public class Socio implements Comparable<Socio> {
 		}
 	}
 	
+	public String getNombre() {
+		return nombre;
+	}
+
+
+
+	public void setNombre(String nombre) {
+		if (nombre != null && !nombre.isBlank()) {
+			this.nombre = nombre;
+		}
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		if (edad > 0) {
+			this.edad = edad;
+		}
+	}
+
 	@Override
 	public int compareTo(Socio o) {
 		return this.id - o.id;
@@ -26,4 +48,6 @@ public class Socio implements Comparable<Socio> {
 	public String toString() {
 		return this.id + ": " + this.nombre + " " + this.edad + " años";
 	}
+	
+	
 }

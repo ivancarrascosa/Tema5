@@ -15,7 +15,10 @@ public class MainSocio {
 		System.out.println(listaSocios);
 		Collections.sort(listaSocios);
 		System.out.println(listaSocios);
-
+		listaSocios.sort(new ComparatorEdad());
+		System.out.println(listaSocios);
+		listaSocios.sort(new comparatorNombre());
+		System.out.println(listaSocios);
 	}
 
 }

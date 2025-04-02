@@ -21,6 +21,26 @@ public class Futbolista implements Comparable<Futbolista> {
 		}
 	}
 	
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		if (edad >= 16) {
+			this.edad = edad;
+		}
+	}
+
+	public int getNumeroGoles() {
+		return numeroGoles;
+	}
+
+	public void setNumeroGoles(int numeroGoles) {
+		if (numeroGoles >= 0) {
+			this.numeroGoles = numeroGoles;
+		}
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		Futbolista other = (Futbolista) obj;

@@ -1,6 +1,6 @@
 package analisis.ejercicio2;
 
-abstract public class Ficha {
+abstract public class Ficha implements Comparable<Ficha> {
 	
 	private int id;
 	
@@ -35,6 +35,12 @@ abstract public class Ficha {
 		}
 		
 	}
-
+	
+	@Override
+	public int compareTo(Ficha ficha) {
+		return this.id - ficha.id;
+		
+	}
+	
 	abstract public int tiempoPrestamo();
 }
