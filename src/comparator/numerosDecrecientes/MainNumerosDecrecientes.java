@@ -17,7 +17,7 @@ public class MainNumerosDecrecientes {
 			listaNumeros.add(numero);
 		}
 		System.out.println(listaNumeros);
-		listaNumeros.sort(new comparatorNumerosDecreciente());
+		listaNumeros.sort((Integer a, Integer b) -> b - a);
 		System.out.println(listaNumeros);	
 	}
 

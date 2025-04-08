@@ -2,6 +2,7 @@ package interfaz.ejercicio1;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class MainSocio {
 
@@ -15,9 +16,12 @@ public class MainSocio {
 		System.out.println(listaSocios);
 		Collections.sort(listaSocios);
 		System.out.println(listaSocios);
-		listaSocios.sort(new ComparatorEdad());
+		listaSocios.sort((a, b) -> a.getEdad() - b.getEdad());
 		System.out.println(listaSocios);
-		listaSocios.sort(new comparatorNombre());
+		Comparator<Socio> comparadorNombreAlfabetico = (a,b) -> {
+			return a.getNombre().compareTo(b.getNombre());
+		};
+		listaSocios.sort(comparadorNombreAlfabetico);
 		System.out.println(listaSocios);
 	}
 
